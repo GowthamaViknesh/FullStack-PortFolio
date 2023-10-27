@@ -1,38 +1,538 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #212121;
   color: white;
 }
+/* Hide the default scroll bar */
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
 
-.App-link {
-  color: #61dafb;
+  /* Hide the scrollbar in Webkit-based browsers (Chrome, Safari) */
+  -webkit-overflow-scrolling: touch;
 }
 
-@keyframes App-logo-spin {
-  from {
+/* Define the appearance of the scroll bar */
+body::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1f1d1d; /* Color of the thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color on hover */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* Color of the track */
+}
+
+/* Rest of your CSS */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #212121;
+  color: white;
+  overflow-x: hidden; /* Keep horizontal scrolling hidden */
+}
+
+.nav-color {
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+.navbar-brand {
+  margin-left: 250px;
+  color: #fff;
+}
+
+.navbar-nav {
+  margin-left: 390px;
+  gap: 12px;
+}
+
+/* HomePage */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-top: 30px;
+  margin-left: 90px;
+}
+
+.btn-git {
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+.icon {
+  font-size: 2.3rem;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.home-icon {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: rgb(226, 42, 42);
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.home-description {
+  font-size: 1rem;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.home-desc {
+  color: rgb(194, 46, 46);
+  margin-right: 2px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #737679; /* Adjust the button's background color */
+  color: #fff; /* Adjust the button's text color */
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.btns {
+  padding: 10px 20px;
+  background-color: #0a0b0b; /* Adjust the button's background color */
+  color: #e81111; /* Adjust the button's text color */
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.btn_mern {
+  padding: 10px 10px;
+  background-color: #0a0b0b; /* Adjust the button's background color */
+  color: #e81111; /* Adjust the button's text color */
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.card-text {
+  font-size: 13.5px;
+  font-weight: 10;
+  margin-bottom: 30px;
+}
+
+.card-title {
+  color: rgb(219, 23, 23);
+  font-weight: 700;
+}
+
+.home-button:hover {
+  background-color: #0f0f0f; /* Adjust the button's hover background color */
+}
+
+.home_img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-self: center;
+  width: 370px;
+  height: 405px;
+  margin-right: 100px;
+  animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* About */
+
+.about-cont {
+  margin-top: 120px;
+}
+
+.about_container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+  margin-top: 40px;
+}
+
+.about_img {
+  width: 320px;
+  height: 60vh;
+  border-radius: 1.5rem;
+  justify-self: center;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+
+.about_info {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+}
+
+.about_box {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+  margin-bottom: 10px;
+  color: black;
+}
+.about_icon {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.about_title {
+  font-size: 13px;
+  font-weight: 700;
+}
+.about_subtitle {
+  font-size: 12px;
+  font-weight: 600;
+}
+.about_description {
+  text-wrap: 12px;
+  padding: 0 2rem 0 0;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+.btn-about {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Adjust the button's background color */
+  color: #1a1919; /* Adjust the button's text color */
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+/* Skills */
+
+.skills-content {
+  margin-top: 120px;
+  font-size: 40px;
+}
+
+.cardBox {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.cards-content {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: #262628;
+  border-radius: 20px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.cards-content .h2-class,
+.span-class {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  font-weight: 800;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.span-class {
+  top: 75%;
+}
+
+.cards-content .content .h3-class {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+.cards-content .content {
+  font-size: 1rem;
+  line-height: 45px;
+}
+.cards-content .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.cards-content:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cards-content:hover .h2-class,
+.cards-content:hover span {
+  opacity: 0;
+}
+
+.icons {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.h2-icon {
+  font-size: 1.4rem;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: 1.2rem;
+  display: flex;
+  justify-items: center;
+  margin-left: 10px;
+  line-height: 45px;
+  margin-top: 10px;
+}
+
+.cont {
+  margin-left: 175px;
+}
+
+/* Quali */
+
+.text-container {
+  margin-top: 120px;
+}
+
+.content-cont {
+  margin-top: 90px;
+}
+
+.text-content {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.text-contents {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.icon-quali {
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.text-contents-cont {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.shake-icon {
+  animation: shake 10s cubic-bezier(0.36, 2.07, 0.72, 0.5) infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Certi */
+
+.certi-container {
+  margin-top: 170px;
+  margin-bottom: 50px;
+}
+
+.image-fluid {
+  width: 10%;
+  margin-top: 10px;
+}
+
+.image-fluids {
+  width: 10%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.text-certi {
+  margin-top: 30px;
+}
+
+/* Project */
+.text-pro {
+  margin-top: 120px;
+}
+
+/* Front */
+
+.front-cont {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* Footer */
+.foot-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.text-links {
+  background: linear-gradient(to right, #c8bfbf 0%, #a99a9a 100%);
+  background: linear-gradient(to right, #836a6a 0%, #796868 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 15px;
+}
+
+#spin {
+  color: red;
+}
+#spin:after {
+  content: '';
+  animation: spin 15s linear infinite;
+}
+@keyframes spin {
+  0% {
+    content: 'Frontend Developer';
+  }
+  10% {
+    content: 'Backend Developer';
+  }
+  20% {
+    content: 'Mern Stack Developer';
+  }
+  30% {
+    content: 'Full Stack Developer';
+  }
+  40% {
+    content: 'Frontend Developer';
+  }
+  50% {
+    content: 'Backend Developer';
+  }
+  60% {
+    content: 'Mern Stack Developer';
+  }
+  70% {
+    content: 'Full Stack Developer';
+  }
+  80% {
+    content: 'Full Stack Developer';
+  }
+  90% {
+    content: 'Full Stack Developer';
+  }
+}
+
+.rotating-icon {
+  animation: rotate 6s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg); /* Adjust the angle for the desired rotation */
   }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.section_title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+}
+
+.btn-certi {
+  padding: 10px 20px;
+  background-color: #737679; /* Adjust the button's background color */
+  color: #fff; /* Adjust the button's text color */
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  margin-top: 60px;
 }
