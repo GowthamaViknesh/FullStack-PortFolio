@@ -13,8 +13,8 @@ const Certification = () => {
         Certification
       </h2>
       <div className='container'>
-        <div className='row'>
-          <div className='col-md-6'>
+        <div className='row mb-4 mt-3'>
+          <div className='col-md-4'>
             <div className='text-center'>
               <img
                 src='https://www.guvi.in/build/images/guvi-white-logo.b7f929e677d3c604407e0f0cfb743ae8.webp'
@@ -32,20 +32,41 @@ const Certification = () => {
               </a>
             </div>
           </div>
-          <div className='col-md-6'>
+          <div className='col-md-4'>
             <div className='text-center'>
               <img
-                src='https://logos-world.net/wp-content/uploads/2021/11/Udemy-Symbol.png'
+                src='https://www.guvi.in/build/images/guvi-white-logo.b7f929e677d3c604407e0f0cfb743ae8.webp'
                 alt='logo'
-                className='image-fluids'
+                className='image-fluid'
               />
               <h4 className='text-center text-certi mt-3'>
-                Udemy - Online Course
+                GUVI GEEK - IIT Madras
               </h4>
-              <h5 className='text-center text-certi'>Front End Developer</h5>
+              <h5 className='text-center text-certi'>JavaScript Developer</h5>
               <a
                 className='btn'
-                href='https://drive.google.com/file/d/15BUgGANYuwLgdkNfcn4adko6i9xKStvy/view?usp=sharing'
+                href='https://drive.google.com/file/d/16OpHPnE3tI6lSv2wPi8d_a0R8VlSyjT4/view?usp=sharing'
+                target='_blank'
+              >
+                <span>Certificate</span>
+              </a>
+            </div>
+          </div>
+
+          <div className='col-md-4'>
+            <div className='text-center'>
+              <img
+                src='https://www.guvi.in/build/images/guvi-white-logo.b7f929e677d3c604407e0f0cfb743ae8.webp'
+                alt='logo'
+                className='image-fluid'
+              />
+              <h4 className='text-center text-certi mt-3'>
+                GUVI GEEK - IIT Madras
+              </h4>
+              <h5 className='text-center text-certi'>FSD-101</h5>
+              <a
+                className='btn'
+                href='https://drive.google.com/file/d/1rqbXblYcrtsrChYkICe2R6ffoBtLldDR/view?usp=sharing'
                 target='_blank'
               >
                 <span>Certificate</span>

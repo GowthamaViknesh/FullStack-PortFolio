@@ -2,6 +2,8 @@ import Gold from '../Assests/Gold.png';
 import Auth from '../Assests/auth.png';
 import Url from '../Assests/url.png';
 import Chat from '../Assests/caht.png';
+import ECom from '../Assests/E-come.png';
+import blogs from '../Assests/blogs.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faGlobeEurope } from '@fortawesome/free-solid-svg-icons';
 
@@ -112,36 +114,35 @@ const Mern = () => {
             }}
           >
             <img
-              src={Url}
+              src={ECom}
               class='card-img-top'
               alt='...'
               style={{ height: '24vh' }}
             />
             <div class='card-body'>
-              <h5 class='card-title mt-4'>Url Shortner</h5>
+              <h5 class='card-title mt-4'>E-Commerce</h5>
               <p class='card-text'>
-                Converting long URLs into concise, easy-to-share short links.
-                Users can input lengthy web addresses and receive shortened
-                versions, which are especially useful for social media sharing
-                and tracking link clicks. Share with your friends shortlinks to
-                share easy and neat UI
+                A seamlessly integrating a user-friendly interface, robust
+                backend functionalities, and secure payment gateways. Empowered
+                businesses to showcase and sell their products online, providing
+                customers with a seamless and interactive shopping experience
               </p>
               <a
-                href='https://github.com/GowthamaViknesh/Url-ForntEnd'
+                href='https://github.com/GowthamaViknesh/E-Commerce/tree/main/frontend'
                 target='_blank'
                 className='btn_mern'
               >
                 <FontAwesomeIcon icon={faCode} /> FrontEnd
               </a>
               <a
-                href='https://github.com/GowthamaViknesh/Url-Shortner-Backend'
+                href='https://github.com/GowthamaViknesh/E-Commerce/tree/main/backend'
                 target='_blank'
                 className='btn_mern'
               >
                 <FontAwesomeIcon icon={faCode} /> Backend
               </a>
               <a
-                href='https://moonlit-marshmallow-122de1.netlify.app/'
+                href='https://e-commerce-65t4.onrender.com/'
                 target='_blank'
                 className='btn_mern'
               >
@@ -160,31 +161,31 @@ const Mern = () => {
               color: 'white',
             }}
           >
-            <img src={Auth} class='card-img-top' alt='...' />
+            <img src={blogs} class='card-img-top' alt='...' />
             <div class='card-body'>
-              <h5 class='card-title mt-4'>Email Authentication</h5>
+              <h5 class='card-title mt-4'>Blog Application</h5>
               <p class='card-text'>
-                Application that implements user registration, login, and
-                email-based authentication. It allows users to securely sign up,
-                confirm their email addresses, and access protected features
-                while ensuring data privacy and security
+                This MERN stack project serves as the frontend for a blogging
+                platform, leveraging Redux and Material-UI for state management
+                and UI components, authentication pages, and blog creation
+                features.
               </p>
               <a
-                href='https://github.com/GowthamaViknesh/FrontEnd-Login'
+                href='https://github.com/GowthamaViknesh/BlogApp-FrontEnd'
                 target='_blank'
                 className='btn_mern'
               >
                 <FontAwesomeIcon icon={faCode} /> FrontEnd
               </a>
               <a
-                href='https://github.com/GowthamaViknesh/BackEnd-Login'
+                href='https://github.com/GowthamaViknesh/BlogApp-BackEnd'
                 target='_blank'
                 className='btn_mern'
               >
                 <FontAwesomeIcon icon={faCode} /> Backend
               </a>
               <a
-                href='https://dazzling-fox-d46d7b.netlify.app/'
+                href='https://6553bea955ce5113fdb3c8b0--eloquent-faloodeh-967857.netlify.app/'
                 target='_blank'
                 className='btn_mern'
               >
