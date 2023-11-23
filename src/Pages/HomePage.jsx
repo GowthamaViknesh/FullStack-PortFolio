@@ -1,14 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHand } from '@fortawesome/free-regular-svg-icons';
-import Images from '../Assests/IMG_0458.jpg';
-import Pro from '../Assests/pro-2.jpg';
 import Pro1 from '../Assests/pro.jpg';
 import AboutPage from './AboutPage';
 import SkillsPage from './SkillsPage';
 import {
   faConnectdevelop,
   faGithub,
-  faJs,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import QualiPage from './QualiPage';

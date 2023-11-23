@@ -81,7 +81,7 @@ const AboutPage = () => {
               </p>
               <a
                 className='btn'
-                href='https://drive.google.com/file/d/1ckL5qHcROXvVWHB-XhNnAqJdOGJRwblv/view?usp=sharing'
+                href='https://drive.google.com/file/d/1RwsRgwrdOEd5tcLtebgY7yd1ahphjbFb/view?usp=sharing'
                 target='_blank'
               >
                 Download CV

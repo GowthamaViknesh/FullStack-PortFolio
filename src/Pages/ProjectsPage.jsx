@@ -8,7 +8,7 @@ import { faCodepen } from '@fortawesome/free-brands-svg-icons';
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
-  const [selectedComponent, setSelectedComponent] = useState('FrontEnd');
+  const [selectedComponent, setSelectedComponent] = useState('Mern');
 
   const handleFront = () => {
     setSelectedComponent('FrontEnd');

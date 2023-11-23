@@ -1,7 +1,5 @@
 import {
-  faGitAlt,
   faGithub,
-  faInstagram,
   faLinkedin,
   faNodeJs,
   faReact,
