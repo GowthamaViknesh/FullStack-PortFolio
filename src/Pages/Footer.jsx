@@ -10,12 +10,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Footer = () => {
+  const handleEmailClick = (event) => {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      event.preventDefault();
+      window.location.href =
+        'googlegmail:///co?to=gowthampostbox18@gmail.com&subject=subject%20text';
+    }
+  };
+
   return (
     <footer class='py-3 my-4'>
       <h4 className='text-center border-bottom pb-3 mb-3'>Contact Me</h4>
       <ul class='nav justify-content-center '>
         <li class='nav-item'>
-          <a href='/' class='nav-link px-2 text-links'>
+          <a
+            href='mailto:gowthampostbox18@gmail.com?subject=subject%20text'
+            class='nav-link px-2 text-links'
+            onClick={handleEmailClick}
+          >
             <FontAwesomeIcon
               icon={faPaperPlane}
               className='foot-icon'
@@ -28,6 +44,7 @@ const Footer = () => {
           <a
             href='https://www.linkedin.com/in/gowtham1820?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
             class='nav-link px-2 text-links'
+            target='_blank'
           >
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -38,7 +55,11 @@ const Footer = () => {
           </a>
         </li>
         <li class='nav-item'>
-          <a href='#' class='nav-link px-2 text-links'>
+          <a
+            href='https://github.com/GowthamaViknesh'
+            class='nav-link px-2 text-links'
+            target='_blank'
+          >
             <FontAwesomeIcon
               icon={faGithub}
               style={{ color: 'white' }}

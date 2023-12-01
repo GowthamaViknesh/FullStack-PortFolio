@@ -44,7 +44,7 @@ const HomePage = () => {
                     </span>
                     creating innovative web solutions
                   </p>
-                  <a href='/' className='btn'>
+                  <a href='https://wa.me/8825646069' className='btn'>
                     Say Hello
                   </a>
                   <button className='btn-git '>
