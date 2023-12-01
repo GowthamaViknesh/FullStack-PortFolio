@@ -31,13 +31,24 @@ const ProjectsPage = () => {
         <FontAwesomeIcon icon={faCodepen} /> Projects
       </h3>
       <div className='text-center'>
-        <button className='btn' onClick={handleFront}>
+        <button
+          className={`btn ${
+            selectedComponent === 'FrontEnd' ? 'selected' : ''
+          }`}
+          onClick={handleFront}
+        >
           FrontEnd
         </button>
-        <button className='btn' onClick={handleBack}>
+        <button
+          className={`btn ${selectedComponent === 'BackEnd' ? 'selected' : ''}`}
+          onClick={handleBack}
+        >
           BackEnd
         </button>
-        <button className='btn' onClick={handleMern}>
+        <button
+          className={`btn ${selectedComponent === 'Mern' ? 'selected' : ''}`}
+          onClick={handleMern}
+        >
           Mern
         </button>
       </div>
